@@ -30,9 +30,9 @@ TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27*/
 const calcAverage = (n1,n2,n3) => (n1+n2+n3)/3
 
 const checkWinner = function(avgDolphins, avgKoalas){
-    if (avgKoalas>avgDolphins){
+    if (avgKoalas>= 2*avgDolphins){
         console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`)
-    }else if(avgDolphins>avgKoalas){
+    }else if(avgDolphins>= 2*avgKoalas){
         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`)
         
     } 
