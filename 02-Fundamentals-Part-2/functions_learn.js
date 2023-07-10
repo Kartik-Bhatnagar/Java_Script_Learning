@@ -106,6 +106,21 @@ const evenOrOdd2 = function(num){
 cPrint(`The number 5 is ${evenOrOdd(5)}. `)
 cPrint(`The number 5678 is ${evenOrOdd2(5678)}`)
 
+//Arrow function 
+//it can be used  one-liner functions in javascript , introuced in ES-6
+const multiplyTwo = (m1,m2) => m1*m2;//DECLEARING ARROW FUNCTION
+let n1 = Number(prompt("Multiplying two numbers \nenter first number: "))
+let n2 = Number(prompt("Enter the second number : "))
+let mulResult = multiplyTwo(n1,n2) //calling multipyTwo arrow function
+alert(`${n1}*${n2}=${mulResult} \n(using arrow function )`)
 
+//Multiline arrowfunction
+const squareSum=(num1,num2) =>{ // finds the sum of the squares of both the given number
+const s1 = num1*num1
+const s2 = num2*num2
+return(s1+s2)
+}
+
+cPrint(`Sum of squares of ${n1} and ${n2} is : ${squareSum(n1,n2)}`)
 
 //next task find the differnce of two dates in [number of days] format
