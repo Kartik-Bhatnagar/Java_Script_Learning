@@ -15,11 +15,11 @@ TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86, and 52.
 
  */
 const billAll = new Array(22, 295, 176, 440, 37, 105, 10, 1100, 86, 52);
-const tipsAll=[]
-const totalsAll =[]
+const tipsAll = [];
+const totalsAll = [];
 
-for (let i=0;i<billAll.length;i++){ 
-tipsAll[i] = calcTip(billAll[i]) //function from file coding_challenge_2.js
-totalsAll.push(billWithTip(billAll[i])) //function from file coding_challenge_2.js
+for (let i = 0; i < billAll.length; i++) {
+  tipsAll[i] = calcTip(billAll[i]); //function from file coding_challenge_2.js
+  totalsAll.push(billWithTip(billAll[i])); //function from file coding_challenge_2.js
 }
-console.log(billAll,tipsAll,totalsAll)
+console.log(billAll, tipsAll, totalsAll);

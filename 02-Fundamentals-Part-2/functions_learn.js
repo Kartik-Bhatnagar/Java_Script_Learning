@@ -63,7 +63,7 @@ function daysPassedMonth(month){// to know how many days passed upto the month
 function dayNumber(date,month,year){
     logger()
     let yearIsLeap = false
-    if (month>3){ //if the month is post Feburary then we need to know if it a leap year
+    if (month>2){ //if the month is post Feburary then we need to know if it a leap year
         // (to check number of days in feb. )
         yearIsLeap = checkLeapYear(year)
     }
