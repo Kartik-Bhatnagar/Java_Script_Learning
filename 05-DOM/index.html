@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style1.css" rel="stylesheet" />
+    <script src="dayNumberCalc.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="date_form">
+        <br />
+        <div class="dates" id="dob-date">
+          <p class="form-para" id="para-dob">
+            Enter the date of birth in dd/mm/yyyy format
+          </p>
+          <label class="form-lab"> Date : </label>
+          <input class="dob-date inp" />
+          <label class="form-lab">Month: </label>
+          <input class="dob-month inp" />
+          <label class="form-lab"> Year:</label>
+          <input class="dob-year inp" />
+        </div>
+        <div class="dates" id="user-date">
+          <p class="form-para" id="user-para"></p>
+          <label class="form-lab"> Date : </label>
+          <input class="user-date inp" />
+          <label class="form-lab">Month: </label>
+          <input class="user-month inp" />
+          <label class="form-lab"> Year:</label>
+          <input class="user-year inp" /><br />
+        </div>
+      </div>
+      <button id="form-btn">Check</button>
+      <div class="answer-div">
+        <p id="ans-para">Answer will get displayed here</p>
+      </div>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
