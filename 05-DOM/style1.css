@@ -67,5 +67,10 @@ body {
 }
 
 .result-reset {
+  color: blue;
   display: none;
+}
+
+.comm {
+  font-family: Arial, Helvetica, sans-serif;
 }
