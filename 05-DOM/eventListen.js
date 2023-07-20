@@ -82,7 +82,16 @@ const clickEventFxn = function () {
       tDays,
     ];
     usrData.arr.push(curData);
-    console.log(document.querySelector(".user-data"));
+    document.querySelector(
+      ".comm"
+    ).innerHTML = `<h3>${usrData.arr.length} Records</h3>`;
+    if (usrData.arr.length == 1) {
+      //putting Record in p tag when record is 1
+      document.querySelector(
+        ".comm"
+      ).innerHTML = `<h3>${usrData.arr.length} Record</h3>`;
+    }
+
     document.querySelector(".user-data").innerHTML += usrData.lastLinePrint();
     console.log(document.querySelector(".user-data"));
   }
