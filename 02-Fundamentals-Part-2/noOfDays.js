@@ -38,8 +38,8 @@ todayDate.dateArr = function () {
   this.dArray = new Array(this.date, this.month, this.year);
 };
 
-dobArr = new Array(28, 7, 1999);
-todayArr = new Array(16, 7, 2023);
+dobArr = new Array(16, 11, 1971);
+todayArr = new Array(17, 7, 2023);
 valueType = ["Date", "Month", "Year"];
 
 let propertyName = "";
