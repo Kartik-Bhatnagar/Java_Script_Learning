@@ -100,4 +100,4 @@ function totDays(fDate, fMonth, fYear, tDate, tMonth, tYear) {
   }
 }
 
-console.log(totDays(28, 7, 1999, 18, 7, 2023));
+//console.log(totDays(28, 7, 1999, 18, 7, 2023));
