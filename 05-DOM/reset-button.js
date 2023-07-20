@@ -15,6 +15,7 @@ const removeRecords = function () {
   if (usrData.arr.length > 0) {
     usrData.arr = [];
     document.querySelector(".user-data").innerHTML = "";
+    document.querySelector(".comm").innerHTML = "";
   }
 };
 
