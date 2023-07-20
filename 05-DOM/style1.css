@@ -67,5 +67,6 @@ body {
 }
 
 .result-reset {
+  color: blue;
   display: none;
 }
