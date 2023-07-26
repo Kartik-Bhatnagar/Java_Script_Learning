@@ -42,6 +42,7 @@ const checkScore100 = function (scorePlayer) {
     gameOn = false;
     playerScore100 = activePlayer;
     console.log(playerScore100);
+    diePic.classList.add('hidden');
   }
 };
 const actPlayer1 = function (addScore) {
