@@ -1,5 +1,7 @@
 'use strict';
 //query selector function
+let p1 = prompt('Enter name of the player 1');
+let p2 = prompt('Enter the name of the player2 ');
 const qsClass = className => document.querySelector(`.${className}`);
 const qsId = idName => document.querySelector(`#${idName}`);
 
@@ -9,6 +11,8 @@ const btnHold = document.querySelector('.btn--hold');
 const diePic = document.querySelector('.dice');
 const player1 = qsClass('player--0');
 const player2 = qsClass('player--1');
+const playerN1 = qsId('name--0');
+const playerN2 = qsId('name--1');
 let activePlayer = player1; //initially the player 1 will be active
 
 let deActivePlayer = player2;
@@ -23,6 +27,10 @@ let activeTotScore = scoreP1Id;
 let scorePlayer1 = 0;
 let scorePlayer2 = 0;
 let playerScore100;
+//setting up the players name
+playerN1.textContent = p1;
+playerN2.textContent = p2;
+
 //Resetting the Score
 const resetScore = function (scoreObj) {
   scoreObj.textContent = 0;
@@ -43,6 +51,8 @@ const checkScore100 = function (scorePlayer) {
     playerScore100 = activePlayer;
     console.log(playerScore100);
     diePic.classList.add('hidden');
+    player2.classList.remove('player--active');
+    player1.classList.remove('player--active');
   }
 };
 const actPlayer1 = function (addScore) {
@@ -82,7 +92,6 @@ const rollDie = function () {
       diePic.classList.remove('hidden');
     }
     //if totScore of active player reaches 100
-    //TODO
 
     if (dieNum == 1) {
       //if 1 comes on die switch to next player
@@ -127,7 +136,7 @@ const holdScore = function () {
 btnHold.addEventListener('click', holdScore);
 
 //New Game
-//TODO
+
 const restartGame = function () {
   if (!gameOn) {
     playerScore100.classList.remove('player--winner');
@@ -138,13 +147,14 @@ const restartGame = function () {
   activeCurrScore = cScore1Id;
   deActiveCurrScore = cScore2Id;
   activeTotScore = scoreP1Id;
-  deActivePlayer.classList.remove('player--active');
-  activePlayer.classList.add('player--active');
+  player2.classList.remove('player--active');
+  player1.classList.add('player--active');
   scorePlayer1 = 0;
   scorePlayer2 = 0;
   scoreP2Id.textContent = 0;
   scoreP1Id.textContent = 0;
   cScore1Id.textContent = 0;
   cScore2Id.textContent = 0;
+  currScore = 0;
 };
 btnNew.addEventListener('click', restartGame);
